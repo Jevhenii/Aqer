@@ -1,0 +1,64 @@
+$p-light: #7F8890;
+$p-dark: #000000;
+$-white: #FFFFFF;
+$p-red: #E4364F;
+$border: #C0C0C0;
+$black-bg: #1A232E;
+$grey: #262E39;
+
+@mixin button-bg($bg) {
+    background: $bg;
+    width: 168px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: $-white;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    &:hover {
+        background-color: $p-dark;
+    }
+}
+
+@mixin big-button-bg($bg) {
+    background: $bg;
+    width: 168px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: $-white;
+    &:hover {
+        background-color: $p-red;
+    }
+}
+
+@mixin blank-button-bg($bg) {
+    background: $bg;
+    width: 168px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: $p-dark;
+    border: 1px solid $border;
+    &:hover {
+        background-color: $p-dark;
+        color: $-white;
+        border: none;
+    }
+}

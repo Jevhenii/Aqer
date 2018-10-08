@@ -1,0 +1,28 @@
+.slick-dots li button:before {
+  color: #000000;
+  font-size: 13px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #E4364F;
+}
+.slick-dots {
+  bottom: -20px;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-list {
+  margin: 5% 0;
+}
+.slider {
+  a {
+    margin-top: 5%;
+    font-family: "OpenSansSemiBold";
+  }
+}

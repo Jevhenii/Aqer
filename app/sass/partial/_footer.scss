@@ -1,0 +1,39 @@
+@import "../vars";
+.footer {
+  background-color: #1A232E;
+  color: $-white;
+  padding: 5% 0;
+  border-top: 1px solid $p-light;
+  white-space: nowrap;
+    a {
+      color: #7F8890;
+        &:hover {
+          color: $p-red;
+        }
+    }
+    i {
+      color: $-white;
+      transition: color 0.5s;
+      &:hover {
+        color: $p-red;
+      }
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-left {
+    text-align: center;
+  }
+  .footer-right {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .footer-left div {
+    flex-direction: column;
+  }
+  .footer-right div:nth-of-type(2) {
+    flex-direction: column;
+  }
+}

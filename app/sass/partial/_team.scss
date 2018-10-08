@@ -1,0 +1,37 @@
+@import "../vars";
+.team-wrapper {
+  margin-bottom: 10%;
+  .team-title-lg {
+    margin: 10% 0% 5%;
+  }
+  .team-title {
+    .advisers {
+      margin-top: 5%;
+    }
+  }
+  .team-members {
+    // basically for IE
+    .face-img {
+      width: 180px;
+      height: 180px;
+    }
+    & > div {
+      margin-top: 5%;
+      h3 {
+        margin-top: 10%;
+      }
+      a {
+        margin-top: 3%;
+      }
+      p {
+        color: $p-light;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .partners {
+    justify-content: center !important;
+  }
+}

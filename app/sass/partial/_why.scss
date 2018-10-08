@@ -1,0 +1,17 @@
+@import "../vars";
+.why-wrapper {
+  .why-title {
+    margin: 10% 0;
+  }
+  .benefits {
+    .benefits-box {
+      &:nth-of-type(3), &:nth-of-type(4) {
+        margin-top: 5%;
+      }
+      h3 {
+        color: $p-red;
+        margin-top: 5%;
+      }
+    }
+  }
+}
